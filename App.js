@@ -1,4 +1,5 @@
 
+
 import React, {useState} from 'react';
 import {
   SafeAreaView,
@@ -57,8 +58,9 @@ const App = () => {
             keyboardType='numeric'
             placeholder='Enter Value'
             placeholderTextColor='#c1c1c1'
-            value={inputValue}
+            value={inputValue.toString()}
             onChangeText={(inputValue)=>setInputValue(inputValue)}
+            underlineColorAndroid={'#51E1ED'}
             >
           </TextInput>
         </View>
@@ -89,8 +91,6 @@ const styles = StyleSheet.create({
     height: 70,
     marginTop: 80,
     justifyContent: 'center',
-    borderColor: '#bbe1fa',
-    borderWidth: 2,
     alignItems: 'center',
   },
   resultValue: {
@@ -102,8 +102,6 @@ const styles = StyleSheet.create({
     height: 70,
     marginTop: 10,
     justifyContent: 'center',
-    borderColor: '#bbe1fa',
-    borderWidth: 2,
     alignItems: 'center',
   },
   inputText: {
